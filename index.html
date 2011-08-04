@@ -25,6 +25,7 @@
 
   <!-- CSS: implied media="all" -->
   <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/dashboard.css?v=2">
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
@@ -41,12 +42,17 @@
 
     </header>
     <div id="main" role="main">
-
+        <iframe id="commitalization-frame" src="http://commits.codeforamerica.org" scrolling="no" seamless="seamless" >
+        
+        </iframe>
+        <iframe id="ci-frame" src="http://ci.codeforamerica.org:8000/view/tv-view/?auto_refresh=true&32x32" scrolling="no" seamless="seamless" >
+        
+        </iframe>
     </div>
     <footer>
 
     </footer>
-  </div> <!--! end of #container -->
+  </div>
 
 
   <!-- JavaScript at the bottom for fast page loading -->
@@ -57,8 +63,7 @@
 
 
   <!-- scripts concatenated and minified via ant build script-->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
+  <!-- <script src="js/plugins.js"></script> -->
   <!-- end scripts-->
 
 
@@ -66,15 +71,6 @@
     <script src="js/libs/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
   <![endif]-->
-
-
-  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
-  <script>
-    var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-    s.parentNode.insertBefore(g,s)}(document,"script"));
-  </script>
 
 </body>
 </html>

@@ -1,0 +1,19 @@
+/**
+ * Dashboard CSS
+ */
+ 
+body {
+    background-color: #212121;
+}
+
+#commitalization-frame {
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+
+#ci-frame {
+    width: 40%;
+    height: 100%;
+    float: right;
+}
